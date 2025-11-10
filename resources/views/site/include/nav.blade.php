@@ -12,6 +12,9 @@
                     <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="/login">Acesso</a></li>
+                    
                 </ul>
             </div>
         </nav>

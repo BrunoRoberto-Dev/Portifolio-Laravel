@@ -10,3 +10,4 @@ include __DIR__ . '/site/contact/data.php';
 
 
 include __DIR__ . '/system/profile/data.php';
+include __DIR__ . '/system/auth/data.php';
