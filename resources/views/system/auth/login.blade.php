@@ -29,7 +29,7 @@
             <form action="{{route('auth.login.store')}}" method="post">
                 @csrf
                 <div class="form-floating my-3">
-                    <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="bruno@test.com">
+                    <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="">
                     <label for="floatingInput">Email address</label>
                 </div>
 
@@ -38,7 +38,7 @@
                 @enderror
 
                 <div class="form-floating mb-4">
-                    <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" value="123">
+                    <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password" value="">
                     <label for="floatingPassword">Password</label>
                 </div>
 
