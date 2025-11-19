@@ -26,24 +26,27 @@
         
         <div class="col-6 w-25 bg-dark bg-opacity-75 px-3 rounded">
 
-            <div class="form-floating my-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">First Name</label>
-            </div>
+            <form action="{{route('auth.signup.store')}}" method="post">
+                @csrf
+                <div class="form-floating my-3">
+                    <input name="name" type="text" class="form-control" id="floatingInput" placeholder="name" required>
+                    <label for="floatingInput">First Name</label>
+                </div>
 
-            <div class="form-floating my-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-            </div>
+                <div class="form-floating my-3">
+                    <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
 
-            <div class="form-floating mb-4">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
+                <div class="form-floating mb-4">
+                    <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="password" required>
+                    <label for="floatingPassword">Password</label>
+                </div>
 
-            <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary w-75">Sign Up</button>
-            </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-75">Sign Up</button>
+                </div>
+            </form>
 
             <br>
 
