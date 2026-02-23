@@ -1,11 +1,11 @@
 @extends('system.include.body')
 
 @section('header')
-    <title>Home Screen</title>
+    <title>Skills Screen</title>
 @endsection
 
 @section('nav')
-    <h1>Home</h1>
+    <h1>Manage Skills</h1>
 @endsection
 
 @section('content')

@@ -4,28 +4,29 @@
     @include('system.include.head')
     @yield('header')
 </head>
-<body class="bg-dark bg-dark text-light d-flex">
+<body class="bg-dark bg-dark text-light">
 
     <!-- Left menu -->
-    <div class="col-2" style="background-color: #1B1E21;">
-        @include('system.include.sidemenu')
-    </div>
+<div class="position-fixed top-0 start-0 h-100 sidebar" style="width: 250px; background-color: #1B1E21;">
+    @include('system.include.sidemenu')
+</div>
 
-    <!-- Content -->
-    <div class="col-10 px-5">
-        <!-- Navbar -->
-        <div class="d-flex py-3">
-            <div class="col-10">
-                @yield('nav')
-            </div>
-            <div class="col-2">
-                @include('system.include.nav')
-            </div>
+<!-- Content -->
+<div class="content px-5" style="margin-left: 250px;">
+    <!-- Navbar -->
+    <div class="d-flex justify-content-between align-items-center py-3 w-100">
+        <div class="">
+            @yield('nav')
         </div>
-
-        {{-- content section --}}
-        @yield('content')
+        <div class="">
+            @include('system.include.nav')
+        </div>
     </div>
+
+    {{-- Content Section --}}
+    @yield('content')
+</div>
+
 
     
     <!-- Scripts -->

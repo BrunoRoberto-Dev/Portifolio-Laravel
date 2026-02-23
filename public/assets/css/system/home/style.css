@@ -1,12 +1,1 @@
-.btn-sidemenu{
-    width: 9rem;
-    height: 5rem;
 
-    transition: .25s ease;
-}
-
-.btn-sidemenu:hover {
-    background: #0D6EFD;
-    box-shadow: 0 0 10px rgba(13, 110, 253, .6);
-    transform: translateX(4px);
-}

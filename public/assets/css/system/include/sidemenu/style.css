@@ -1,0 +1,46 @@
+/* Botão base */
+.btn-sidemenu {
+    position: relative;
+    overflow: hidden;
+    width: 9rem;
+    height: 5rem;
+    border: none;
+    border-radius: 12px;
+    background: #1f2630; /* Azul bem escuro */
+    transition: 0.2s ease;
+}
+
+/* Barra azul lateral estilo Discord (hover + active) */
+.btn-sidemenu::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 60%;
+    border-radius: 10px;
+    background: #0d6efd; /* Azul Bootstrap primary */
+    transition: 0.25s ease;
+}
+
+/* Hover */
+.btn-sidemenu:hover::before {
+    width: 4px;
+}
+
+/* Active */
+.btn-sidemenu.active::before {
+    width: 6px;               /* um pouco maior que o hover (efeito Discord) */
+    background: #0d6efd;
+}
+
+/* Ícone + texto ajustados */
+.btn-sidemenu i {
+    font-size: 1.4rem;
+}
+
+.btn-sidemenu span,
+.btn-sidemenu {
+    color: #ffffff;
+}

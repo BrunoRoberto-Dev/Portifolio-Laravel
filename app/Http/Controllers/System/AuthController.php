@@ -46,6 +46,7 @@ class AuthController extends Controller {
         try {
             Auth::logout();
 
+            return redirect()->route('auth.login')->with(['success' => 'Saiu com sucesso!']);
         } catch (Exception $e) {
             dd($e);
             return redirect('/erro-500');

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\System\SystemController;
+use App\Http\Controllers\System\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/system/home', [SystemController::class, 'view'])->name('system.home');
+Route::get('/system/home', [HomeController::class, 'view'])->name('system.home');

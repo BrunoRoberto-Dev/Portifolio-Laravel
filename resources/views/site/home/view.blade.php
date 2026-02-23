@@ -1,7 +1,7 @@
 @extends('site.include.body')
 
 @section('header')
-    <title>Portfolio</title>
+    <title>Portifolio</title>
 
 
 @endsection
@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row align-items-center g-4">
                     <div class="col-md-4 text-center">
-                        <img src="./assets/foto.png" class="rounded-circle img-fluid border border-secondary" alt="Foto do desenvolvedor" width="370" height="180">
+                        <img src="/assets/images/home/foto.png" class="rounded-circle img-fluid border border-secondary" alt="Foto do desenvolvedor" width="370" height="180">
                     </div>
                     <div class="col-md-8">
                         <h2 class="h4 mb-3">Sobre mim</h2>
@@ -50,13 +50,13 @@
                     <!-- Card do projeto Cultura -->
                     <div class="col-md-4">
                         <article class="card bg-dark border-secondary h-100 shadow-sm">
-                            <img src="./assets/projeto_cultura.png" class="card-img-top" alt="Captura de tela do Projeto 1">
+                            <img src="/assets/images/home/projeto_cultura.png" class="card-img-top" alt="Captura de tela do Projeto 1">
                             <div class="card-body">
                                 <h3 class="h5 card-title text-white">Portal da Cultura – Prefeitura de Peruíbe</h3>
                                 <p class="text-light-secondary">Desenvolvimento do Portal da Cultura de Peruíbe, para gestão de notícias e eventos culturais.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top border-secondary d-flex justify-content-between">
-                                <a href="./views/projects/cultura.html" class="btn btn-sm btn-primary">Ler Mais</a>
+                                <a href="/projeto-cultura" class="btn btn-sm btn-primary">Ler Mais</a>
                                 
                             </div>
                         </article>
@@ -65,13 +65,13 @@
                     <!-- Card do projeto Carta de Servico -->
                     <div class="col-md-4">
                         <article class="card bg-dark border-secondary h-100 shadow-sm">
-                            <img src="./assets/projeto_carta_servico.png" class="card-img-top" alt="Captura de tela do Projeto 1">
+                            <img src="/assets/images/home/projeto_carta_servico.png" class="card-img-top" alt="Captura de tela do Projeto 1">
                             <div class="card-body">
                                 <h3 class="h5 card-title text-white">Portal de Serviços – Prefeitura de Peruíbe</h3>
                                 <p class="text-light-secondary">Participação no desenvolvimento do Portal de Serviços de Peruíbe, garantindo acesso fácil e moderno às informações públicas.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top border-secondary d-flex justify-content-between">
-                                <a href="./views/projects/servicos.html" class="btn btn-sm btn-primary">Ler Mais</a>
+                                <a href="/projeto-cultura" class="btn btn-sm btn-primary">Ler Mais</a>
                                 
                             </div>
                         </article>
@@ -117,7 +117,7 @@
                 </form>
 
                 <div class="text-center mt-4">
-                    <p class="text-light-secondary mb-1">Email: <a href="mailto:brunooroberto.oficial@gmail.com" class="text-light text-decoration-none">brunooroberto.oficial@gmail.com</a></p>
+                    <p class="text-light-secondary mb-1">Email: <a href="mailto:brunorobertodev@hotmail.com" class="text-light text-decoration-none">brunorobertodev@hotmail.com</a></p>
                     <p class="text-light-secondary mb-1">GitHub: <a href="https://github.com/BrunoRoberto-Dev" target="_blank" rel="noopener" class="text-light text-decoration-none">BrunoRoberto-Dev</a></p>
                     <p class="text-light-secondary">Linkedin: <a href="https://br.linkedin.com/in/brunorobertodev" target="_blank" rel="noopener" class="text-light text-decoration-none">brunorobertodev</a></p>
                 </div>

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\System;
+namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Exception;
 
 
-class SystemController extends Controller {
+class ProjectsController extends Controller {
 
     public function __construct()
     {
@@ -15,7 +15,7 @@ class SystemController extends Controller {
 
     public function view() {
         try {
-            return view('system.home.view');
+            return view('site.projects.view');
 
         } catch (Exception $e) {
             dd($e);
