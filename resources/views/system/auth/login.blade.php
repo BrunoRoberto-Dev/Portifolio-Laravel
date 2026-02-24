@@ -47,7 +47,7 @@
                 @enderror
     
                 <div class="d-flex justify-content-center text-white mb-3">
-                    <input type="checkbox" name="RememberMe"  id=""><span class="ms-2 me-5">Remember me</span>
+                    <input type="checkbox" name="remember" id="remember"><label class="ms-2 me-5" for="remember">Remember me</label>
                     <a href="" class="fst-italic text-white" style="text-decoration: none;">Forgot password?</a>
                 </div>
     

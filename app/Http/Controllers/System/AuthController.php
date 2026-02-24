@@ -28,29 +28,31 @@ class AuthController extends Controller {
 
     public function storeLogin(Request $request) {
         $request->validate([
-            'email'=>'required|email',
-            'password'=>'required'
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
-
+    
         $credentials = $request->only('email', 'password');
-        $authenticated = Auth::attempt($credentials);
-
-        if(!$authenticated){
-            return redirect()->route('auth.login')->withErrors(['error' => 'E-mail or password invalid!']);
+        $remember = $request->filled('remember'); // <- aqui
+    
+        if (!Auth::attempt($credentials, $remember)) {
+            return redirect()->route('auth.login')
+                ->withErrors(['error' => 'E-mail or password invalid!']);
         }
-
+    
+        $request->session()->regenerate(); // segurança contra session fixation
+    
         return redirect()->route('system.home');
     }
 
-    public function logout() {
-        try {
-            Auth::logout();
-
-            return redirect()->route('auth.login')->with(['success' => 'Saiu com sucesso!']);
-        } catch (Exception $e) {
-            dd($e);
-            return redirect('/erro-500');
-        }
+    public function logout(Request $request) {
+        Auth::logout();
+    
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+    
+        return redirect()->route('auth.login')
+            ->with(['success' => 'Saiu com sucesso!']);
     }
 
     
